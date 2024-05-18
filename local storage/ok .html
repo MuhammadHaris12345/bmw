@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Check if browser supports local storage
+if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+
+  // Store data
+  localStorage.setItem("username", "John");
+
+  // Retrieve data
+  var username = localStorage.getItem("username");
+  document.write("Username retrieved from local storage: " + username + "<br>");
+
+  // Remove data
+  localStorage.removeItem("username");
+} else {
+  // Sorry! No Web Storage support..
+  console.log("Sorry, your browser does not support local storage.");
+}
+
+document.write(username)
+
+    </script>
+</body>
+</html>

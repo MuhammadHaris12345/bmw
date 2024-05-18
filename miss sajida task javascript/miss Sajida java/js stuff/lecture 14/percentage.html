@@ -1,0 +1,55 @@
+<html>
+
+<head>
+
+</head>
+
+
+
+
+<script type="text/javascript">
+
+a = prompt("enter your english marks");
+b=  prompt("enter your urdu marks");
+c=  prompt("enter your maths marks");
+
+
+a = parseInt(a);
+b = parseInt(b);
+c = parseInt(c);
+
+per = ((a+b+c)/300)*100;
+
+if(per>=0 && per<=100)
+{
+
+alert("percentage is"+per);
+//alert("invalid input");
+}
+else if(per == 33)
+{
+alert(" you are just pass");
+}
+else if(per >= 80 && per <= 100)
+{
+alert("you have got A - one grade ");
+}
+else if(per >= 70 && per< 80)
+{
+alert("you have got a grade A");
+}
+else if(per >= 60 && per < 70) 
+{
+alert("you have got grade B");
+}
+else
+{
+alert("invalid input");
+} 
+
+
+</script> 
+<body>
+
+</body>
+</html>

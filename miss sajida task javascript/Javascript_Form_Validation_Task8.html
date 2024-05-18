@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form Validation Task</title>
+<style>
+#form {background-color:#0CF; width:300px; height:250px}
+</style>
+
+
+</head>
+
+<body>
+<center>
+<div id="form">
+<form name="f1"; id="form1"><br>
+Name:<input type="text" name="t1">
+<br>
+<p id="p1"> </p>
+Email:<input type="email" name="t2">
+<br>
+<p id="p2"> </p>
+Age:<input type="text" name="t3">
+<br>
+<p id="p3"> </p>
+phone number:<input type="text" name="t4">
+<br>
+<p id="p4"></p>
+<input type="button" name="b1" value="Submit" onClick="func()">
+<input type="reset" name="b2"><br>
+</form>
+</div>
+</center>
+
+<script>
+function func(){
+
+var name=document.f1.t1.value;
+var email=document.f1.t2.value;
+var age=document.f1.t3.value;
+var phone=document.f1.t4.value;
+
+
+
+
+var reg=/^([A-Za-z]{3,})$/;
+
+var reg2=/^([A-Za-z0-9_\-\.])+\@([A-Za-z]{4,8})+\.([A-Za-z]{2,4})$/;
+
+var reg3=/^([0-9]{1,2})$/;
+
+var reg4=/^([0-9]{4,})+\-([0-9]{7,})$/;
+
+
+
+if (name==0)
+{
+	document.getElementById('p1').innerHTML="Enter Name!";
+	document.getElementById('p1').style.color="red";
+}
+else if (reg.test(name)==false)
+{
+	document.getElementById('p1').innerHTML="Invalid Name!";
+	document.getElementById('p1').style.color="red";
+}
+else if(reg.test(nameaa)==true)
+{
+	document.getElementById('p1').innerHTML="";
+}
+
+
+
+if (email==0)
+{
+	document.getElementById('p2').innerHTML="Enter Email!";
+	document.getElementById('p2').style.color="red";
+	}
+	
+	
+	
+else if (reg2.test(email)==false)
+{
+	document.getElementById('p2').innerHTML="Invalid Email!";
+	document.getElementById('p2').style.color="red";
+}
+else if (reg2.test(email)==true)
+{
+	document.getElementById('p2').innerHTML="";
+}
+
+
+
+if (age==0)
+{
+	document.getElementById('p3').innerHTML="Enter Age!";
+	document.getElementById('p3').style.color="red";
+	}
+else if (reg3.test(age)==false)
+{
+	document.getElementById('p3').innerHTML="Invalid Age!";
+	document.getElementById('p3').style.color="red";
+}
+else if (reg3.test(age)==true)
+{
+	document.getElementById('p3').innerHTML="";
+}
+
+if (phone==0)
+{
+	document.getElementById('p4').innerHTML="Enter your numbre!";
+	document.getElementById('p4').style.color="red";
+	}
+else if (reg4.test(phone)==false)
+{
+	document.getElementById('p4').innerHTML="Invalid numer!";
+	document.getElementById('p4').style.color="red";
+}
+else if (reg4.test(phone)==true)
+{
+	document.getElementById('p4').innerHTML="";
+}
+
+
+
+
+if (reg.test(name)==true && reg2.test(email)==true && reg3.test(age)==true){
+var temp=window.open();
+temp.document.write("Your Name: ", name, "<br>");
+temp.document.write("Your Email: ",email, "<br>");
+temp.document.write("Your Age: ", age, "<br>");
+}
+}
+</script>
+
+</body>
+</html>

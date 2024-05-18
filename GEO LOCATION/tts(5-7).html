@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1139.6387840847467!2d67.03368483006085!3d24.92772320847175!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDU1JzQzLjkiTiA2N8KwMDInMDQuNCJF!5e0!3m2!1sen!2sus!4v1714657415063!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+    
+</head>
+
+
+<body>
+    <div id="myid"></div>
+    <button id="btn">Get location</button>
+    <script>
+        function showPosition(pos){
+            let lat=pos.coords.latitude;
+            let long=pos.coords.longitude;
+            myid.innerHTML="LATITUDE <br> "+lat+"Longitude"+long
+            let userlocation= `https://www.google.com/maps?q=${lat},${long}&output=embed`;
+    
+            map.setAttribute("src", userlocation);
+        }
+        document.getElementById("btn").onclick=function(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition());
+            }
+            else{
+            console.log("not supported by your system")
+            }
+        }
+
+
+    </script>
+</body>
+</html>

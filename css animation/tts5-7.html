@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 100%;
+            background-color: rgb(167, 167, 212) ;
+            padding: 10px;
+
+            
+
+        }
+        .circle{
+            height: 40px;
+            width: 40px;
+            border: solid rgb(0, 0, 0);
+            background-color: rgb(1, 255, 77);
+            border-radius:  50%;
+            
+            animation-name: aptech;
+            animation-duration: 4s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            
+            animation-direction: reverse;
+            animation-play-state: running;
+            
+
+          }
+          .circle:hover {
+    animation-play-state: paused ;
+    background-color: aqua;
+}
+          @keyframes aptech{
+            0%{
+                transform: translate(0px, 0px);
+            }
+            25%{
+                transform: translate(100px, 0px);
+            }
+            50%{
+                transform: translate(100px ,100px);
+            }
+            75%{
+                transform: translate(0px ,100px);
+            }
+            /* 100%{
+                transform: translate(0px, 0px);
+            } */
+          }
+
+/* #chk :active .circle{
+    animation-play-state: paused;
+} */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <!-- <input type="checkbox" id="chk"> -->
+  
+    </div>
+</body>
+</html>

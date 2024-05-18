@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is your location</h1>
+    <p>please press the button</p>
+    <button  onclick="getlocation()" >Press </button>
+    <p id="demo"></p>
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9116.205206864019!2d67.04286084246237!3d24.93995824111173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f8014fe5943%3A0x11df7a65effb1ef6!2sNorth%20Nazimabad%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1713280997124!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script>
+        let x=document.getElementById("demo");
+        function getlocation(){
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(myPosition);
+
+            }
+            else{
+                x.innerHTML = "geolocation is not accessable to your device";
+            }
+        }
+    
+        function myPosition(position){
+            let y=document.getElementById("map");
+        y.src = `https://www.google.com/maps?q=${position.coords.latitude},${position.coords.longitude}&output=embed`
+            x.innerHTML = "latitude:" + position.coords.latitude +
+                "<br>longitude" + position.coords.longitude;
+        }
+
+    </script>
+
+</body>
+</html>

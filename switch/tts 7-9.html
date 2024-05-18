@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" onclick="m1()" style="background-color: rgb(17, 223, 17);" >on click</div>
+    <div class="box" onmousedown="m2()" style="background-color: red;" >onmousedown</div>
+    <div class="box" onmouseover="m6()" style="background-color: blue;"  >onmouseup</div>
+    <div class="box" ondblclick="m4()" style="background-color: rgb(255, 4, 117);" >ondoubleclick</div>
+    <div class="box" onmousemove="m5()" style="background-color: rgb(251, 255, 14);"  >onmousemove</div> 
+        <script type="text/javascript">
+            alert("this is alert message")
+
+        function m1(){
+            alert('onclick');
+        };
+        function m2(){
+            alert('onmousedown1');
+        };
+        function m3(){
+            alert('onmouseup');
+        };
+        function m4(){
+            alert('ondblclick');
+        };
+        function m5(){
+            alert('on mouse move');
+        };
+        function m6(){
+            alert('on mouse over')
+        };
+        function m7(){
+            alert('on mouse')
+        };
+        
+
+    </script>
+</body>
+</html>

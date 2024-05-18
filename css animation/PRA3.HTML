@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: black;
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            border: solid white;
+            background-color: rgb(34, 255, 101);
+            border-radius: 50%;
+            animation-name: ball;
+            animation-duration: 4s;
+            animation-timing-function: ;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: ;
+
+
+        }
+        @keyframes ball{
+            0%{transform: translate(0px ,0px);}
+            25%{transform: translate(200px ,0px);}
+            50%{transform: translate(200px, 200px);}
+            75%{transform: translate(0px ,200px);}
+            100%{transform: translate(0px, 0px)}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+
+        </div>
+    </div>
+</body>
+</html>

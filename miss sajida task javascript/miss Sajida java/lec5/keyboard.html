@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function color(color) {
+		document.getElementById("textbox").style.background = color;
+	}
+</script>
+</head>
+
+<body>
+
+
+<p>Write a message:<br></p>
+<input id="textbox"
+	   type="text" 
+	   onkeydown="color('yellow')"
+	   onkeyup="color('white')">
+
+
+</body>
+</html>

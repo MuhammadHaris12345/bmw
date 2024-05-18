@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+.abc
+{
+	float:left;
+width:200px;
+height:200px;
+background-color:#ff0000;
+color:#003;
+}
+#abc1{
+	float:left;
+	
+	width:200px;
+height:200px;
+background-color:#9F0;
+	color:#000;}
+</style> 
+</head>
+<body>
+
+
+<p id="abc1"></p>
+<div class="abc" onmouseover="over()" onmouseout="out()">
+
+
+<script>
+function over()
+ { document.getElementById("abc1").innerHTML="Mouse Over"; }
+ function out() 
+{ document.getElementById("abc1").innerHTML="Mouse Out"; }
+</script>
+
+</body>
+</html>

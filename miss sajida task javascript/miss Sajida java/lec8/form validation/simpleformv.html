@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>FORM VALIDATION</title>
+<script type="text/javascript">
+
+function Submit()
+{
+var a =document.fm.us.value;
+var b=document.fm.ps.value;
+
+if(a =="aptech" && b =="12345")
+{
+window.open("http://www.bing.com");
+}
+else if (a!="aptech" || b =="12345")
+{
+document.getElementById("abc").innerHTML="invalid user name";
+document.getElementById("abc").style.color="red";
+}
+else if (a =="aptech" || b !="12345")
+{
+document.getElementById("xyz").innerHTML="invalid password";
+document.getElementById("xyz").style.color="red";
+}
+else
+{
+document.write("valid address");
+}
+
+
+}
+</script>
+</head>
+<body>
+<form name="fm">
+<table>
+<tr>
+<td> user name</td>
+<td> <input type="text" name="us"></td>
+<td><p id="abc"></p></td>
+</tr>
+<tr>
+<td>password</td>
+<td><input type="password" name="ps">
+</td>
+<td> <p id="xyz"></p>
+</td>
+</tr>
+<tr>
+<td> <input type="button" name="btn" value="submit" onclick="Submit()"/></td>
+</tr>
+</tab;e>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,95 @@
+
+	<html>
+
+	<head>
+
+	<style>
+
+	tr{ text-align:center;}
+
+	</style>
+
+	<script type="text/javascript">
+	
+	var result;
+	var dollar,pkr;
+
+	function currencyconverter(input,fromcurrency, tocurrency)
+
+	{
+
+	if(fromcurrency=="dollar" || fromcurrency=="DOLLAR"   && tocurrency =="pkr"    || tocurrency =="PKR")
+
+	{
+
+	result = (input*90.01)
+	
+	}
+
+	else if(fromcurrency=="pkr" || fromcurrency=="PKR" && tocurrency =="dollar" || tocurrency =="DOLLAR")
+
+	{
+
+	result = (input/90.01)
+	
+	}
+	alert(result);
+
+
+	}
+	</script>
+
+	</head>
+
+	<body>
+
+	<table border="0" align=center cellspacing="10">
+	<tr>
+	<td colspan="2">
+	<h2>Currency Converter </h2>
+	
+	</td>
+	</tr>
+	<tr>
+	<td>
+
+	Enter your desired value:
+	</td>
+	<td>
+	<input type="text" id = "input"/>
+	
+	</td>
+	</tr>
+
+	<tr style="text-align:left">
+	<td>
+
+	From Currency:
+	</td>
+	<td>
+
+	<input type="text" id = "fromcurrency" value="Dollar/PKR" />
+	</td>
+	</tr>
+	<tr style="text-align:left">
+	<td>
+
+	To Currency:
+	</td>
+	<td>
+	
+    <input type="text" id = "tocurrency" value="Dollar/PKR" />
+	</td>
+	</tr>
+
+	<tr>
+	<td colspan="2">
+	
+	<input type="button" name = "input" value="Click here to convert" onClick="currencyconverter(input.value, fromcurrency.value, tocurrency.value )"/>
+	</td>
+	</tr>
+
+	
+	</table>
+	</body>
+	</html>

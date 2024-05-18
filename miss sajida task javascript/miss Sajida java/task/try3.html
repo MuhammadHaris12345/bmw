@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="FORM">
+        <input type="text" name="v1">
+        <input type="text" name="v2">
+        <input type="button" onclick="mul()" value="MULTIPLY" name="this" >
+
+    </form>
+   <P id="myid"></P>
+</body>
+<script>
+    function mul(){
+        let a=FORM.v1.value;
+        let b=FORM.v2.value;
+        let c=a*b;
+        document.getElementById("myid").innerHTML=c;
+    }
+</script>
+</html>

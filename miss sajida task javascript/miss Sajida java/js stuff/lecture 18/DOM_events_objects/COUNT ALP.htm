@@ -1,0 +1,38 @@
+<html>
+ <head>
+
+   <script language="JavaScript">
+   function abc()
+     {
+
+          //document.getElementById('d').innerHTML=txt1.value;
+           txt2.value=txt1.value.length;
+           
+     }
+	 function color_change()
+	 {
+		 document.getElementById('txt3').style.backgroundColor="blue";
+		 
+		 }
+function change2()
+	 {
+		 document.getElementById('txt1').style.backgroundColor="pink";
+		 
+		 }
+   </script>
+<body>
+<input type="text" id="txt3" onKeyPress="color_change()" >
+<br>
+<br>
+
+
+<input type="Text" id="txt1" onKeydown="change2()">
+<input type="Text" id="txt2">
+<input type="Button" id="btn1" value="Click" Onclick="abc()">
+
+
+</body>
+</html>
+
+
+

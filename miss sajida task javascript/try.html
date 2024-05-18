@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="data()" >
+        <input type="text" id="id1">
+        <input type="text" id="id2">
+        <input type="submit" value="login">
+    </form>
+    <script>
+        function data(){
+        var a=document.getElementById("id1").value;
+        var b=document.getElementById("id2").value;
+        if(a==""||b==""){
+            alert("all field must be filled")
+        return false;
+        }
+
+        if(a.length<5){
+            alert("naam pura bharo")
+        return false;
+        }
+        if(b.length<5){
+            alert("5 password tk bharo")
+        return false;
+        }
+        else
+        true;
+    }
+        
+
+
+
+
+    </script>
+</body>
+</html>

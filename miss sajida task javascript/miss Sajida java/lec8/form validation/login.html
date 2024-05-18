@@ -1,0 +1,61 @@
+<html>
+
+
+<head>
+<script>
+function login()
+{
+
+var un,pwd;
+un=document.fm.txtuser.value;
+pwd=document.fm.txtpwd.value;
+
+if(un == "asp" && pwd =="aptech")
+
+
+	{
+
+
+	window.open("form.html");
+
+
+
+	}
+else
+alert("wrong username or password");
+
+}
+</script>
+</head>
+
+
+<body>
+
+<form name="fm">
+<table align="center" style="background-color:silver; padding:20;" width="30%">
+
+
+<tr>
+
+
+<td>Username:</td><td><input type="text" name="txtuser"/></td>
+
+</tr>
+
+<tr>
+<td>Password:</td><td><input type="password" name="txtpwd"/></td>
+</tr>
+
+<tr>
+
+
+<td colspan="2" align="center"><input type="button" value="login" onClick="login();"/></td></tr>
+</table>
+
+
+</form>
+
+</body>
+
+
+</html>

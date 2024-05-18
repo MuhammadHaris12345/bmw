@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="calculator">
+        <input id="screen" type="text"  name="val1">
+        <input type="text"  name="val2">
+        <input  type="button" onclick="one()" value="1" name="onee">
+        <input  type="button" onclick="two()" value="2" name="twoo">
+        <input type="button" onclick="div()" value="div">
+
+    </form>
+
+    <p id="form"><input type="text"></p>
+    <script>
+        function mult(){
+            let a=calculator.val1.value;
+            let b=calculator.val2.value;
+            let c=a*b;
+            document.getElementById('form').innerHTML=c;
+        }
+        function div(){
+            let a=calculator.val1.value;
+            let b=calculator.val2.value;
+            let c=a/b;
+            document.getElementById('form').innerHTML=c;
+        }
+        function one(){
+            let d=calculator.onee.value;
+            document.getElementById('form').innerHTML=d;
+
+        }
+        function two(){
+            let e=calculator.twoo.value;
+            document.getElementById('form').innerHTML=e;
+
+        }
+
+    </script>
+</body>
+
+
+</html>

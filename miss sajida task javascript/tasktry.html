@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form Validation Task</title>
+<style>
+#form {background-color:#0CF; width:300px; height:250px}
+</style>
+</head>
+
+<body>
+<center>
+<div id="form">
+<form name="f1"; id="form1"><br>
+Name:<input type="text" name="t1">
+<br>
+<p id="p1"> </p>
+<input type="button" name="b1" value="Submit" onClick="func()">
+<input type="reset" name="b2"><br>
+</form>
+</div>
+</center>
+
+<script>
+function func(){
+  var name = document.f1.t1.value;
+  var reg=/^([A-Za-z]+\s?[A-Za-z]+\s?[A-Za-z]+)$/;
+
+
+//   var reg = /^[a-z]/;
+
+  if (name == 0) {
+    document.getElementById('p1').innerHTML="Enter Name!";
+    document.getElementById('p1').style.color="red";
+  } else if (reg.test(name) == false) {
+    document.getElementById('p1').innerHTML="Invalid Name!";
+    document.getElementById('p1').style.color="red";
+  } else {
+    document.getElementById('p1').innerHTML="";
+  }
+}
+</script>
+
+</body>
+</html>

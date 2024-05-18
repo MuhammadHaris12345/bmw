@@ -1,0 +1,36 @@
+*{background-color: aqua;
+    margin: 20px;
+
+}
+.container{
+    
+    display: flex;
+    height: 80vh;
+    justify-content:center;
+    align-items: center;
+    border-width: 20px;
+    border: 2px solid red;
+    margin-top: 20%;
+    
+    
+    
+
+}
+.item{
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    margin: 4px;
+    background-color: red;
+}
+#id{
+
+        height: 50px;
+        width: 50px;
+        border: 2px solid rgb(43, 11, 11);
+        margin: 4px;
+        background-color: rgb(20, 7, 7);
+    }
+    h1{
+        color: rgb(213, 27, 250);
+    }

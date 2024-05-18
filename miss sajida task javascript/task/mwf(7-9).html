@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="calculator">
+        <input type="text" name="v1">
+        <input type="text" name="v2">
+        <input type="button" onclick="multiply()" value="MULTIPLY">
+        <input type="button" onclick="divide()" value="DIVIDE ">
+        <input type="button" onclick="per()" value="per ">
+        <input type="button" onclick="add()" value="add ">
+    </form>
+    <p id="form"></p>
+    <p id="grade"></p>
+
+    <script>
+        function multiply(){
+            let a =calculator.v1.value;
+            let b=calculator.v2.value;
+            let c=a*b;
+            document.getElementById("form").innerHTML=c;
+         }
+         function divide (){
+            let a =calculator.v1.value;
+            let b=calculator.v2.value;
+            let c=a/b;
+            document.getElementById("form").innerHTML=c;
+         }
+         function per(){
+            let a =calculator.v1.value;
+            let b=calculator.v2.value;
+            let c=(((a/b)*100)+"%");
+            document.getElementById("form").innerHTML=c;
+         }
+         function add(){
+            let a =calculator.v1.value;
+            let b=calculator.v2.value;
+            let c=parseFloat(a)+parseFloat(b);
+            document.getElementById("form").innerHTML=c;
+         }
+         
+         function grade(){
+            let d=""
+
+
+            if(d>=80){
+                
+            }
+         }
+
+
+
+
+    </script>
+</body>
+</html>

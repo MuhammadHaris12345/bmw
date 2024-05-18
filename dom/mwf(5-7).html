@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is heading one</h1>
+    <h1>This is heading one</h1>
+    <h2>this is my heading 2</h2>
+    <h3>this is heading 3</h3>
+
+    <div class="myclass">this is class</div>
+    <div class="myclass">this is class</div>
+<div id="myid">this is id</div>
+<script>
+    let a=document.getElementById("myid")
+    a.innerHTML="this is new id CHANGED with the help of DOM"
+    let b=document.getElementsByTagName("h1")
+    b[1].innerHTML="this is my changed heading"
+    let n=document.getElementsByTagName("h2")
+    n[0].innerHTML="this is my new h2"
+    let y=document.getElementsByTagName("h3")
+    y[0].innerHTML="this "
+    let r=document.getElementsByClassName("myclass")
+    r[0].style.border="solid "
+    r[0].style.color="seagreen"
+    
+    
+
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,135 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function func()
+{
+var n=document.fm.usrnm.value;
+var e=document.fm.email.value;
+var cn=document.fm.usrcnt.value;
+var ct=document.fm.country.selectedIndex;
+
+
+
+if(n.length==0)
+{
+document.getElementById('p1').innerHTML="Enter Name!!!";
+document.getElementById('p1').style.color="red";
+}
+
+else if(n.length!=0)
+{
+document.getElementById('p1').innerHTML=" ";
+}
+
+reg=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9])+\.([A-Za-z]{2,4})$/;
+
+if(e.length==0)
+{
+document.getElementById('p2').innerHTML="Enter Email!!!";
+document.getElementById('p2').style.color="red";
+}
+
+else if(reg.test(e)==false)
+{
+document.getElementById('p2').innerHTML="Invalid Email!!!";
+document.getElementById('p2').style.color="red";
+}
+else if(e.length!=0)
+{document.getElementById('p2').innerHTML="";
+}
+
+
+if(cn.length==0)
+{
+document.getElementById('p3').innerHTML="Enter Contact!!!";
+document.getElementById('p3').style.color="red";
+}
+else if(cn.length!=0)
+{
+document.getElementById('p3').innerHTML="";
+}
+
+
+if(ct==0)
+{
+document.getElementById('p4').innerHTML="Select Country!!!";
+document.getElementById('p4').style.color="red";
+}
+else if(ct.length!=0)
+{document.getElementById('p4').innerHTML="";
+}
+
+
+
+
+if(n.length!=0 && reg.test(e)==true && cn.length!=0 && ct!=0)
+{
+
+var win=window.open();
+win.document.write("<b>NAME:</b>"+n+"<br>");
+win.document.write("<b>EMAIL:</b>"+e+"<br>");
+win.document.write("<b>CONTACT #:</b>"+cn+"<br>");
+var ct=document.fm.country.value;
+win.document.write("<b>COUNTRY:</b>"+ct+"<br>");
+var c=document.fm.cm.value;
+win.document.write("<b>COMMENTS:</b>"+c+"<br>");
+}
+
+
+}
+</script>
+</head>
+<body>
+<form name="fm">
+<table name="tbl" align="center" style="background-color:pink; border:3px solid maroon;">
+
+<tr>
+<td><b>NAME:</b></td><td><input type="text" name="usrnm"/></td><td><p id="p1"></p></td>
+</tr>
+<tr>
+<td><b>EMAIL:</b></td><td><input type="text" name="email"/></td><td><p id="p2"></p></td>
+</tr>
+<tr>
+<td><b>CONTACT#</b></td><td><input type="text" name="usrcnt"/></td><td><p id="p3"></p></td>
+</tr>
+<tr>
+<td><b>SELECT COUNTRY:</b></td><td>
+<select name="country">
+<option>----------</option>
+<option>Pakistan</option>
+<option>India</option>
+<option>Australia</option>
+<option>China</option>
+<option>Rome</option>
+<option>France</option>
+<option>London</option>
+</td><td><p id="p4"></p></td></tr>
+<tr>
+<td colspan="3" align="center">
+<textarea cols="20" rows="3" name="cm">your comments here</textarea></td></tr>
+
+<tr>
+<td colspan="3" align="center"><input type="button" value="Submit" onclick="func()"/>
+<input type="reset" value="Reset" /></td>
+</tr>
+
+
+
+
+
+
+
+</table>
+
+</form>
+
+
+
+
+
+
+
+</body>
+
+</html>

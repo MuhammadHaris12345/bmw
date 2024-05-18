@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    height: 80vh;
+    border: 5px solid rgb(59, 21, 21);
+    border-width: 4px;
+    justify-content: center;
+    /* align-items: center; */
+    align-items: center;
+    margin: 50px;
+    
+    
+   
+
+}
+.item{
+    height: 70px;
+    width: 70px;
+    border: 2px solid rgb(49, 13, 49);
+    margin: 4px;
+    background-color: blueviolet;
+    
+}
+.header{
+    height: 70px;
+    width: 100%;
+    border: 2px solid rgb(9, 9, 126);
+
+}

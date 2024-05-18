@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 100%;
+            border: solid black;
+            background-color: black ;
+            padding: 20px;
+        }
+        .circle{
+            height: 50px;
+            width: 50px;
+            border: solid;
+            background-color: chartreuse;
+            border-radius: 50%;
+            animation-name: aptech;
+            animation-duration: 9s;
+            animation-timing-function: ;
+            animation-delay:0s ;
+            animation-iteration-count:infinite;
+            animation-direction:  ;
+            animation-play-state:  ;
+           
+
+
+        }
+        .circle:hover{
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            border-radius: 0%;
+        }
+        .container:hover{
+            background-color: brown;
+        }
+
+        @keyframes aptech{
+            0%{transform: translate(0px, 0px);}
+            25%{transform: translate(100px,0px);
+            background-color: blue;}
+            50%{transform: translate(100px,100px);
+            background-color: brown;}
+            75%{transform: translate(0px,100px);
+            background-color: bisque;}
+
+
+
+
+          
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="circle"></div>  
+    </div>
+</body>
+</html>

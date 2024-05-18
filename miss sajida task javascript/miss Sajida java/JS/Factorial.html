@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Factorial </title>
+<script>
+
+function factorial(n){
+
+if (n==0){
+return 1;
+}
+else{
+return n * factorial(n-1);
+}
+
+}
+var num=prompt("Enter number to calculate factorial: ");
+var result=factorial(num);
+alert("Factorial of "+num+" is "+ result);
+</script>
+
+</head>
+<body>
+
+
+</body>
+</html>

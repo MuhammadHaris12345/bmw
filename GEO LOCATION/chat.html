@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Geolocation ka support check karna
+if (navigator.geolocation) {
+    // Location ka access permission lena
+    navigator.geolocation.getCurrentPosition(function(position) {
+        // Latitude ko nikalna
+        var latitude = position.coords.latitude;
+        // Latitude ko console par print karna
+        document.write("Latitude: " + latitude);
+    });
+} else {
+    // Geolocation support nahi hai toh error handle karna
+    document.write("Geolocation is not supported by this browser.");
+}
+    </script>
+</body>
+</html>

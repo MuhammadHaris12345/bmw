@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Html</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px ;
+            /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+            grid-template-rows: 300px 400px;
+            column-gap: 20px;
+            row-gap: 40px;
+            justify-content: center;
+            align-content: center;
+            
+            /* justify-items: center;
+            align-items: center; */
+        }
+        .item{
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-color: plum;
+            border: solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+    </div>
+</body>
+</html>

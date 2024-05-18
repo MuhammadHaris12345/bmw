@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            display: flex;
+        }
+        .box {border: solid rgb(9, 208, 243);
+        height: 344px;
+    width: 344px;
+    background-color: rgb(3, 22, 26);
+    /* background-image : url(smile.jpeg) ; */
+    
+}
+
+        body {
+            background-color: yellow;
+        }
+
+        @media only screen and (max-width: 430px) {
+            .boxes{
+                height: 344px;
+    width: 344px;
+            }
+            body {
+                background-color: red;
+
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        this is yellow body
+    </div>
+    <div class="boxes">
+        <div class="box"><img class="box" src="smile.jpeg" alt=""></div>
+        <div class="box"><img class="box" src="smile.jpeg" alt=""></div>
+        <div class="box"><img class="box" src="smile.jpeg" alt=""></div>
+    </div>
+</body>
+
+</html>

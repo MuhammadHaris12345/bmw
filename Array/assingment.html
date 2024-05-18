@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Frist we will test the Do-while loop");
+
+
+
+        document.write("<h1> Assignment of Loops :- </h1>");
+        document.write("<p><b><ul><li> For Loop.  </li> <li> while Loop.  </li> <li> do-while Loop.  </li></ul></b></p>");
+             document.write("<br>");
+        document.write("<h3> For Loop :- </h3>");
+        document.write("Here we are going to create the multiple  of <b>5</b> till <b>10</b>  using For Loop.")
+             document.write("<br>");
+        for(i = 1; i < 11; i = i++) {
+            document.write ("5 X",i+"=",i*5);
+        }
+             document.write("<br>");
+             document.write("<br>");
+        document.write(" Here is an another example.");
+             document.write("<br>");
+        document.write(" <b> Here we are going to write the even numbers.</b>");
+             document.write("<br>");
+        for (a = 1 ; a <= 20; a++) {
+            if(a%2===0) {
+                document.write ( a, " is an  even number. <br>")
+            } 
+        }
+             document.write("<br>");
+        document.write(" <b> Here we are going to write the odd numbers.</b>");
+        document.write("<br>");
+        for (a = 1 ; a <= 20; a++) {
+            if(a%2 != 0) {
+                document.write ( a, " is an  odd number. <br>")
+            } 
+        }
+             document.write("<br>");
+        document.write("<h3> While Loop :- </h3>");
+        
+        let b = 0;
+        let sum = 0;
+        while (b <= 20) {
+            sum = sum +b;
+            b++;
+        }
+        document.write("The sum of frist 20 numbers : " + sum);
+             document.write("<br>");
+        document.write("<h3> Do-While Loop :- </h3>");
+        let ans = "";
+        do {
+            // alert("Frist we will test the Do-while loop");
+            ans = prompt ("Capital of Pakistan : \n (Your answer must be written in UpperCase format.) ", "");
+        } while (ans != "ISLAMABAD");
+        alert ("Capital of pakistan is "+ ans);
+
+        document.write("We already tested the Do-while loop through prompts and alerts.")
+        
+    </script>
+</body>
+</html>

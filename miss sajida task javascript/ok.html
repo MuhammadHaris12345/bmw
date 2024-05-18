@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function data(){
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n2").value;
+        if(a==""||b==""){
+            alert("all field are mendatory")
+            return false;
+        }
+        else if(b.length<5||b.length>5){
+            alert("password should be min 5")
+            return false;
+        }
+        else if(isNaN(b)){
+            alert("it should be num only")
+            return false;
+        }
+        else if(Number (a)){
+            alert("it can be only alphabet")
+            return false;
+        }
+        else 
+        true;
+    }
+
+
+
+    </script>
+    <form onsubmit="data()" action="thanks.html">
+        <input type="text" id="n1" value="">
+        <input type="password" id="n2">
+        <input type="submit" value="login">
+
+    </form>
+    
+</body>
+</html>

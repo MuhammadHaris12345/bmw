@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 100%;
+            border: solid navy;
+            background-color: blue;
+            padding: 10px;
+            display: flex;
+
+        }
+        .circle2{
+            height: 40px;
+            width: 40px;
+            border: solid rgb(176, 255, 17);
+            background-color: rgb(34, 48, 19);
+            border-radius: 50%;
+            animation-name: aptech2;
+            animation-duration: 9s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: ;
+        }
+
+        .circle{
+            height: 40px;
+            width: 40px;
+            border: solid yellowgreen;
+            background-color: rgb(127, 250, 5);
+            border-radius: 50%;
+            animation-name: aptech;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: ;
+         }
+   
+         @keyframes aptech{
+            0%{ transform: translate(0px, 0px); }
+            25%{ transform: translate(0px, 200px); ; }
+            50%{ transform: translate(0px, 200px);  }
+            75%{ transform: translate(0px, 0px); }
+         }
+
+
+         @keyframes aptech2{
+            0%{ transform: translate(0px, 200px); }
+            25%{ transform: translate(0px, 0px); ; }
+            50%{ transform: translate(0px, 0px);  }
+            75%{ transform: translate(0px, 200px); }
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="circle2"></div>
+        <div class="circle"></div>
+        <div class="circle2"></div>
+    </div>
+</body>
+</html>

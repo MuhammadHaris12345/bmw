@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>this is location</h1>
+    <p>click on this</p>
+    <button onclick="getlocation()">tryit</button>
+    <p id="demo"></p>
+    <script>
+        let x = document.getElementById("demo");
+        function getlocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+
+            }
+            else {
+                x.innerHTML = "geolocation not ok";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "latitude:" + position.coords.latitude +
+                "<br>longitude" + position.coords.longitude;
+        }
+    </script>
+
+
+
+</body>
+
+</html>

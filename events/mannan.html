@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="calculator" >
+        <input type="text" name="first">
+        <input type="text" name="second">
+        <input type="button" onclick="muliplay()" value="muliplay">
+        <input type="button" onclick="divid()" value="divid">
+        <input type="button" onclick="subtract()" value="sub">
+       
+
+
+
+    </form>
+    <P><div id="demo"> <input type="button"></div></P>
+    <script>
+        function muliplay(){
+            var a=calculator.first.value;[[]]
+            var b=calculator.second.value;
+            var c=a*b;
+            document.getElementById('demo').innerHTML=c;
+        }
+        function divid(){
+            var a=calculator.first.value;
+            var b=calculator.second.value;
+            var c=a/b;
+            document.getElementById('demo').innerHTML=c;
+        }
+        function subtract(){
+            var a=calculator.first.value;
+            var b=calculator.second.value;
+            var c=a-b;
+            document.getElementById('demo').innerHTML=c;
+        }
+    </script>
+</body>
+</html>

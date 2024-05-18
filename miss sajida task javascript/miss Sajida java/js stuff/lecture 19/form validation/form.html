@@ -1,0 +1,88 @@
+<html>
+
+
+<head>
+<script>
+
+function check()
+{
+var str1,str2;
+
+str1=document.fm.txtname.value;
+str2=document.fm.txtemail.value;
+
+
+if(str1.length == 0)
+
+
+	{
+	alert("Enter ur name");
+	}
+reg =/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+if(reg.test(str2)==false)
+
+	{
+
+	alert("wrong email address");
+	}
+var a=document.fm.city.selectedIndex.text;
+
+if(a== 0)
+{
+alert("Select City");
+}
+
+
+
+if(str1.length != 0 && str2.length !=0 && document.fm.city.selectedindex !=0 && reg.test(str2)==true)
+	{
+		disp=window.open("your information");
+		disp.document.write("Name = "+str1+"<br/>");
+		disp.document.write("Email = "+str2+"<br/>");
+		var c=document.fm.city.text;
+
+		disp.document.write("City" + "="+ a + "<br/>");
+
+
+
+	}
+
+else
+window.open("login.html");
+
+}
+
+
+
+</script>
+
+</head>
+
+
+<body>
+<form name="fm" action="sub.html">
+
+
+Name:<input type="text" name="txtname" /> <br/>
+
+Password:<input type="password" name="txtpwd" /><br/>
+
+
+Email:<input type="text" name="txtemail" /><br/>
+
+City:<select name="city">
+
+<option>------</option>
+<option>karachi</option>
+<option>Lahore</option>
+<option>|Islmabad</option>
+</select>
+
+<input type="submit" onClick="check();" value="submit"/>
+</form>
+
+</body>
+
+
+</html>

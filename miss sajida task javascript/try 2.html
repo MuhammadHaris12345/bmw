@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="data()">
+        <input type="text" name="" id="id1">
+        <input type="text" name="" id="id2">
+        <input type="submit" value="login">
+
+    </form>
+    <script>function data(){
+        var a=document.getElementById("id1").value;
+        var b=document.getElementById("id2").value;
+        if (a==""||b==""){
+            alert("this is empty")
+            return false;
+        }
+        else if(a.length<5){
+            alert("this should not be less than 5")
+            return false;
+
+        }
+
+    }
+        
+    </script>
+</body>
+</html>

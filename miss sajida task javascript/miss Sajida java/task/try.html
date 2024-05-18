@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body><form action="" name="haris">
+    <input type="text" name="fv">
+    <input type="text" name="sv">
+    <input type="button" onclick="mul()" value="mul">
+    <input type="button" onclick="div()" value="div">
+    <input type="button" onclick="PER()" value="PER">
+
+
+</form>
+<p id="demo"></p>
+<p id="grade"></p>
+<script>
+    function mul(){
+        var a=haris.fv.value;
+        var b=haris.sv.value;
+        var c=a*b;
+        document.getElementById('demo').innerHTML=c;
+        // calculateGrade(c);
+    }
+    function div(){
+        var a=haris.fv.value;
+        var b=haris.sv.value;
+        var c=a/b;
+        document.getElementById('demo').innerHTML=c;
+        // calculateGrade(c);
+    }
+    function PER(){
+        var a=haris.fv.value;
+        var b=haris.sv.value;
+        var c=a/b*100;
+        document.getElementById('demo').innerHTML=c;
+        calculateGrade(c);
+    }
+   
+    function calculateGrade(value) {
+        var grade;
+        if (value >= 90) {
+            grade = 'A+';
+        } else if (value >= 80) {
+            grade = 'A';
+        } else if (value >= 70) {
+            grade = 'B';
+        } else if (value >= 60) {
+            grade = 'C';
+        } else {
+            grade = 'F';
+        }
+        document.getElementById('grade').innerHTML = "Grade: " + grade;
+    }
+</script>
+
+
+</body>
+</html>

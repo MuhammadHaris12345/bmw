@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: solid ;
+            background-color: blue;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" onclick="fun()"></div>
+    <div class="box" onmousedown="fun2()"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <script>
+        function fun(){
+            alert("this is on click event");
+        }
+        function fun2(){
+            alert("this is on mousedown event");
+        }
+    </script>
+</body>
+</html>

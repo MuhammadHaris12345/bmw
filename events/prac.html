@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boox{
+            height: 100px;
+            width: 100px;
+            border: solid greenyellow;
+            background-color: chartreuse;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" onkeydown="alert(this.value)">
+    <input type="text" onkeyup="alert(this.value)">
+    <input type="text" onkeypress="alert(this.value)">
+  <div class="mouse"></div>
+    <div class="boox" onmousedown="alert('mouse down')"></div>
+    <div class="boox" onmousemove="alert('mouse move')"></div>
+    <div class="boox" onmouseup="alert('mouse up')"></div>
+    <div class="boox" onmouseover="alert('mouse over')"></div>
+    <div class="boox" onclick="alert('mouse click')"></div>
+    <div class="boox" ondblclick="alert('mouse double click')"></div>
+
+
+</body>
+</html>

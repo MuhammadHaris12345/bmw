@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var regex=/very/;
+        var text="harri si a very very nice awesome nice very boy"
+       document.write("example#1")
+       document.write("<br>")
+  document.write(text.replace(regex,"VARY")) 
+       var regex=/arry/g;
+       var text="harry is a varry varry nice awesome nice very boy larry garry"
+       document.write("<br>")
+       document.write("example#2")
+      document.write("<br>")
+      document.write("<br>")
+      document.write(text.replace(regex,"selected")) 
+      document.write("<br>")
+document.write("example#3")
+document.write("<br>")
+var regex=/.arry/g;
+       var text="harry is a varry varry nice awesome nice very boy larry garry"
+       document.write(text.replace(regex,"selected")) 
+       document.write("example#4")
+document.write("<br>")
+var regex=/\darry/g;
+       var text="harry is a varry varry nice awesome nice very boy 2arry 3arry 7arry"
+       document.write(text.replace(regex,"selected")) 
+
+       document.write("<br>")
+document.write("example#5")
+document.write("<br>")
+var regex=/[a-z]/g;
+       var text="harry is a varry varry nice awesome nice very boy 2arry 3arry 7arry"
+       document.write(text.replace(regex,"selected")) 
+</script>
+</body>
+</html>

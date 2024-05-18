@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="cal">
+        <input type="text" name="inp1">
+        <input type="text" name="inp2">
+        <input type="button" value="*" onclick="multiply()" >
+        <input type="button" value="/" onclick="divide()" >
+
+    </form>
+    <p id="my"></p>
+    <script>
+        function multiply(){
+            let a=cal.inp1.value;
+            let b=cal.inp2.value;
+            let c=a*b;
+            document.getElementById("my").innerHTML=c
+
+        }
+        function divide(){
+            let a=cal.inp1.value;
+            let b=cal.inp2.value;
+            let c=a/b;
+            document.getElementById("my").innerHTML=c
+
+        }
+    </script>
+</body>
+</html>

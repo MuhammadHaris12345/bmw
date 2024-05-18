@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION BAR</title><style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box
+            ;
+        }
+        body{background-color:rgb(37, 37, 37);}
+        ul{
+            position: absolute;
+            left: 14%;
+            top: 20%;
+            transform: translate(-40%,-30%);
+            background: rgb(46, 46, 46);
+            width: 50vh;
+            height: 10vh;
+            border-radius:10px;
+            box-shadow: 5px 5px 10px rgba(83, 109, 10, 0.473);
+            display: flex;
+        }
+        ul li{
+            line-height: 100px;
+            width: 100px;
+            color: rgb(17, 235, 243);
+            text-transform: capitalize;
+            font-family:sans-serif;
+            list-style: none;
+            text-align:center;
+            font-size: 16px;
+            cursor: pointer;
+        } 
+        li:nav#a{
+            color: rgb(154, 57, 163);}
+
+        .button{
+        position: absolute;
+        width: 80px;
+        height: 6px;
+        background: rgb(195, 216, 74);
+        bottom:0;
+        left: 10px;
+        border-top-left-radius:5px ;
+        border-top-right-radius: 5px;
+        transition: 0.3s;
+        }
+         li:nth-child(2):hover~.button{
+         left: 110px;
+        }
+        li:nth-child(3):hover~.button{
+        left: 210px;
+        }
+        li:nth-child(4):hover~.button{
+        left: 310px;
+        }
+        li:nth-child(5):hover~.button{
+        left: 410px;
+         }
+        .NAV{
+            color: rgb(170, 15, 15);
+         }
+         .header{
+            position: absolute;
+            top: 4%;
+            left: 2.5%;
+            height: 100px;
+            width: 250px;
+            border-radius: 10PX;
+            box-shadow: 5px 5px 10px rgba(83, 109, 10, 0.473);
+            background-color: rgba(53, 48, 48, 0.678);
+            font-size: 50PX;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(161, 170, 35);
+            margin: 15px;
+             }
+            .items{
+                height:10px;
+                width: 30vh;
+                border: 10px;
+                margin: 20px; 
+                border: 20%;
+             }
+             .container{
+                display:flex;
+                align-items:center;
+                margin: 25vh;
+                margin-inline-start: 25px;
+            } 
+            img{
+                padding: 0;
+                border-style: groove;
+                border-color: rgb(28, 92, 67);
+                border-radius: 10px;
+                box-shadow: 5px 5px 15px;
+                margin: 25px;
+
+            }   
+    </style>
+</head>
+<body>
+    <main>
+    <div class="container">
+    <div class="items"><img src="1.jpg" alt="" height="200vh" width="300vh"> </div>
+    <div class="items"><img src="2.jpg" alt="" height="200vh" width="300vh"> </div>
+    <div class="items"><img src="3.jpeg" alt="" height="200vh" width="300vh"> </div>
+    <div class="items"><img src="4.jpeg" alt="" height="200vh" width="300vh"> </div>
+    <div class="items"><img src="0.6.gif" alt="" height="200vh" width="300vh"> </div>
+    </main>
+      </DIV>
+      <main>
+        <div class="container">
+        <div class="items"><img src="0.1.gif" alt="" height="200vh" width="300vh"> </div>
+        <div class="items"><img src="0.2.gif" alt="" height="200vh" width="300vh"> </div>
+        <div class="items"><img src="0.3.gif" alt="" height="200vh" width="300vh"> </div>
+        <div class="items"><img src="0.4.gif" alt="" height="200vh" width="300vh"> </div>
+        <div class="items"><img src="0.5.gif" alt="" height="200vh" width="300vh"> </div>
+        </main>
+          </DIV>
+      <DIV class="header"> NAVBAR </DIV>
+    <ul>
+        <li><a="#">home</li>
+        <li><a="#">about</li>
+        <li><a="#">work</li>
+        <li><a="#">help</li>
+        <li><a="#">support</li>
+        <div class="button"></div>
+    </ul>
+</body>
+</html>
